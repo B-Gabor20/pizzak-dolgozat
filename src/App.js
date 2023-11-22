@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import React, { useState, useEffect } from 'react';
@@ -29,24 +28,22 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='text-center justify-content-center' align="center">
       <h1>Pizzák</h1>
       {isFetchPending ? (
         <div className="spinner-border text-primary" role="status">
         <span className="sr-only">Loading...</span>
       </div>
       ) : (
-        <div className="container">
-        <div className="row">
+        <div className="container text-center miert" align="center">
+        <div className="row" align="center">
           {pizzas.map(pizza => (
-            <div key={pizza.id}>
-              <div className="col-md-4 card">
+            <div key={pizza.id} align="center">
+              <div className="col-md-4 card miert" align="center">
                 <div className="card-body">
                   <h1 className="card-title">{pizza.name}</h1>
                   <p className="card-text">{pizza.isGlutenFree}</p>
-                  <div className='pizzastaska'>
-                    <img src={pizza.kepURL} className="pizzastaska card-image" alt={pizza.name} />
-                  </div>
+                  <img src={pizza.kepURL} className="card-image" alt={pizza.name} />
                 </div>
                 
               </div>

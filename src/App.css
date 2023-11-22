@@ -1,45 +1,22 @@
-
 .row{
     max-height: 50%;
     display: flex;
-    flex-direction: row;
-}
-h1{
-    font-size: 40px;
-    text-align: center;
+    
 }
 .card{
-    font-size: 40px;
-    border: solid black;
-    border-radius: 25px;
-    height: 50%;
-    max-height: 25%;
-    width: 90%;
-    margin: 5%;
-    overflow: hidden;
+    flex-direction: row;
+    flex: auto;
 }
-
-
-
-
-.loader {
-    text-align: center;
-    justify-content: center;
-    width: 144px;
-    height: 144px;
-    border: 5px solid #FFF;
-    border-bottom-color: #FF3D00;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    }
-
-    @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
+.miert{
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 5px;
+    overflow:hidden;
+}
+img{
+    border: solid black 2px;
+    border-radius: 5%;
+    overflow:hidden;
+    width: 200px;
+    height: 200px;
+}
